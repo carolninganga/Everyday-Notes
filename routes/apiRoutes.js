@@ -11,4 +11,14 @@ module.exports = function (app) {
   });
   // API Post Request
   //hanldes  new data that is being posted 
+
+  app.post("/api/notes", function (req, res) {
+    dataNote.push(req.body);
+    res.json(true);
+    fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(dataNote), function (err) {
+      if (err) throw err;
+      //res.json(dataNote);
+      console.log('new note saved')
+    });
+    });
 }
