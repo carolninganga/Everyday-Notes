@@ -1,5 +1,7 @@
 # note-taker-nodejs
 
+![Untitled_ Jul 1, 2020 9_40 AM (1)](https://user-images.githubusercontent.com/33443452/86250908-330dbb00-bb7f-11ea-8c7c-79d6a793af24.gif)
+
 Note taker is an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 ## Installation
