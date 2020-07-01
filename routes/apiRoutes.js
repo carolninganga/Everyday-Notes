@@ -21,4 +21,32 @@ module.exports = function (app) {
       console.log('new note saved')
     });
     });
+
+     //this handles the delete req when submits the form to the server
+
+     app.delete("/api/notes/:id", function (req, res) {
+
+        console.log("next", req.params)
+        var noteId = req.params.id
+        dataNote = dataNote.filter(x => x.id != noteId)
+  
+        // dataNote = []
+        // console.log(dataNote)  
+        // dataNote.filter(req.params.id);
+  
+        fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(dataNote), function (
+          err
+        ) {
+          if (err) throw err;
+          console.log('Filtered note saved')
+        });
+  
+        res.json(true);
+      });
+  
+      app.get("/", function (req, res) {
+        //res.sendFile(path.join(__dirname, "../public/index.html"));
+        res.sendFile(path.join(__dirname, "/index.html"));
+  
+      });
 }
