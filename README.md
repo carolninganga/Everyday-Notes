@@ -12,10 +12,9 @@ Uses the express, ejs and mysql other dependecies to run
 npm install 
 ```
 
-## Usage
+## Live Heroku link
+https://note-take-nodejs.herokuapp.com/notes
 
-```javaScript
-```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
