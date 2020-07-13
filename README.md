@@ -18,7 +18,7 @@ npm install
 - JavaScript
 
 ## Live Heroku link
-https://note-take-nodejs.herokuapp.com/notes
+https://quiet-eyrie-39742.herokuapp.com/notes
 
 
 ## Contributing
