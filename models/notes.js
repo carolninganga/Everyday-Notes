@@ -15,3 +15,7 @@ const notesSchema = new Schema({
         required:"Enter note"
     }
 });
+
+const Notes = mongoose.model("Notes", notesSchema);
+
+module.exports = Notes;
