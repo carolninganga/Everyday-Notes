@@ -49,6 +49,27 @@ html, body {
   padding-left: 0;
 }
 
+.navbar {
+  background: #642B73 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6426E, #642B73) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+  background: #642B73 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6426E, #642B73) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.jumbotron {
+  background: #642B73 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6426E, #642B73) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 3px;
+}
+
 .list-container .list-group,
 .list-container .list-group-item:first-child,
 .list-container .card {
@@ -67,4 +88,11 @@ html, body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+}
+
+h1 {
+  color: aliceblue;
+}
+h4 {
+  color: aliceblue;
 }
