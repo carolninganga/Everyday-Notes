@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-var dataNote = require("../db/db.json");
+var Notes = require('../models/notes.js')
 
 
 module.exports = function (app) {
