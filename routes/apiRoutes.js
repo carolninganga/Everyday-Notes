@@ -4,13 +4,21 @@ var dataNote = require("../db/db.json");
 
 
 module.exports = function (app) {
-  //reading the JSON file
+ 
+// added a get request to fetch notes from the database 
+  app.get("/api/notes", (req, res) => {
+    Notes.find({})
+    .then(dbNotes => {
+      res.json(dbNotes);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
+  })
+  
 
-  app.get("/api/notes", function (req, res) {
-    return res.json(dataNote);
-  });
-  // API Post Request
-  //hanldes  new data that is being posted 
+
+  
 
   app.post("/api/notes", function (req, res) {
     dataNote.push(req.body);
