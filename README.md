@@ -12,6 +12,11 @@ Uses the express, ejs and mysql other dependecies to run
 npm install 
 ```
 
+## Technologies Used 
+- MongoDB
+- Express
+- JavaScript
+
 ## Live Heroku link
 https://note-take-nodejs.herokuapp.com/notes
 
