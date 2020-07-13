@@ -17,18 +17,19 @@ module.exports = function (app) {
   })
   
 
-
+  // Added a post request to create the note in the database 
+  app.post("/api/notes", ({ body }, res) =>{
+    Notes.create(body)
+    .then(dbNotes => {
+      res.json(dbNotes);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
+  })
   
 
-  app.post("/api/notes", function (req, res) {
-    dataNote.push(req.body);
-    res.json(true);
-    fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(dataNote), function (err) {
-      if (err) throw err;
-      //res.json(dataNote);
-      console.log('new note saved')
-    });
-    });
+  
 
      //this handles the delete req when submits the form to the server
 
