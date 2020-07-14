@@ -28,16 +28,16 @@ module.exports = function (app) {
     });
   })
   
-
-  //Delete request to remove the note from the database
-  app.delete("/api/notes/:id", function (req, res) { 
-    Notes.deleteOne({_id: mongodb.ObjectID( req.params.id)}, (err, result) => {
-       if (err) return console.log(err)
-       console.log(req.body)
-       res.redirect('/')
-     })
-    })
-
+    //DELETE a specific note from all notes
+    //res.json() used to return a response object
+    app.delete("/api/notes/:id", (req, res) => {
+      console.log("trash click", req.params.id)
+      Notes.deleteOne({id: req.params.id}, 
+          function(err, docs){
+          if(err) res.json(err);
+      });
+    });
+  
   
 
      //this handles the delete req when submits the form to the server
