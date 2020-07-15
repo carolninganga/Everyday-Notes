@@ -1,4 +1,10 @@
+
+
 # Everyday Notes
+
+
+## Live Heroku link
+https://quiet-eyrie-39742.herokuapp.com/notes
 
 <img width="1427" alt="Screen Shot 2020-07-13 at 4 34 08 PM" src="https://user-images.githubusercontent.com/33443452/87351200-18482880-c527-11ea-9797-3c87c95534d6.png">
 <img width="1419" alt="Screen Shot 2020-07-13 at 4 36 00 PM" src="https://user-images.githubusercontent.com/33443452/87351203-1a11ec00-c527-11ea-825a-f653de8d98d3.png">
@@ -19,8 +25,7 @@ npm install
 - Express
 - JavaScript
 
-## Live Heroku link
-https://quiet-eyrie-39742.herokuapp.com/notes
+
 
 
 ## Contributing
